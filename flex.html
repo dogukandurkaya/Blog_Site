@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sitesi Flex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex-body">
+    <h1>Flex Nedir ?</h1><br>
+    <p>Flex boyutları bilinmeyen dinamik alanları daha kolay yönetmek için W3C bize sunduğu bir yeniliktir. Ögeleri sağa
+        sola oynatmak için float kullanılırdı. Ögeleri yukarı aşşaya hareket ettirmek de çok zordu. Flex yapısı
+        sayesinde artık bunu kolayca yapabiliyoruz. <br><br>
+        Flexi kullanmamızın en büyük nedeni esnek yapıları kolayca yönetmektir. Çünkü yapıya esneklik verdiği için,
+        yatay ve dikey hizalarda nasıl görüneceğini, öğelerin kendi içinde hizalanmalarını ve sırasını belirlemek gibi
+        güzel özellikleri kolayca ypabiliyoruz.
+    </p><br><br>
+    <h2>Kapsayıcı (Container) için Flex Özellikleri</h2>
+    <p>Flex modülü hem kapsayıcı hem de öğeler için özelliker sunuyor. İlk olarak kapsayıcı için hangi özelliklerine
+        bakalım</p><br>
+    <h3>Display</h3>
+    <p>Display: flex; yaparsak. Bu ögelere esneklik vermiş oluruz </p>
+    <img src="data:image/png;base64,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"
+        alt=""><br><br>
+    <h3>Flex Direction</h3>
+    <p>flex direction : row; Soldan sağa sıralama yapar. <br> flex direction : row-reverse; Sağdan sola sıralama yapar.
+    </p>
+    <p>flex direction : column; Yukarıdan aşşaya sıralama yapar. <br> flex direction : column-reverse; Aşşağıdan
+        yukarıya sıralama yapar.</p>
+    <img style="width: 550px;" src="Adsız1.png" alt=""><br>
+    <img style="width: 530px;" src="Adsız2.png" alt=""><br><br>
+    <h3>Flex-Wrap</h3>
+    <ul>
+        <li>nowrap (varsayılan) = Tüm öğeleri tek bir satıda yan yana listeler.</li>
+        <li>wrap = Öğeler gerektiğinde birden fazla satırda yukarıdan aşağı doğru listelenir.</li>
+        <li>wrap-reverse = Öğeler gerektiğinde birden fazla satırda aşağıdan yukarı doğru listelenir.</li>
+    </ul>
+    <img style="width: 540px;" src="Adsız3.png" alt="">
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
